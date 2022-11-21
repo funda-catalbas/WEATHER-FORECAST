@@ -1,0 +1,126 @@
+:root {
+    --renk-baslik: black;
+    --renk-arama-arka: lightpink;
+    --renk-default: black;
+    --renk-sonuc-arka: lightpink;
+    --baslik-yazi-boyut: 80px;
+    --arama-yazi-boyut: 30px;
+    --sehir-yazi-boyut: 70px;
+    --derece-yazi-boyut: 50px;
+    --statu-yazi-boyut: 30px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+       
+}
+
+
+.arkaplan {
+   width: 180vw;
+   height: 200vh;
+   position: absolute;
+   z-index: -10;
+   left: 0;
+   top: 0;
+   display: flex;
+
+}
+
+.arkaplan .arkaplan-resim {
+    
+    width: 200vw !important;
+    height: 200vh !important;
+   
+}
+
+.arkaplan .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    background-color: lightblue;
+
+}
+
+#baslik {
+    margin-top: 40px;
+    text-align: center;
+    color: var(--renk-baslik);
+    font-size: var(--baslik-yazi-boyut);
+    font-weight: bolder;
+    font-family: 'Henny Penny';
+
+}
+
+.arama {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.arama .arama-input {
+    width: 60%;
+    height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px;
+    border: 5px;
+    font-size: var(--arama-yazi-boyut);
+    font-family: 'Henny Penny';
+    background-color: var(--renk-arama-arka);
+    color: var(--renk-default);
+}
+
+.sonuc {
+    position: relative;
+    
+}
+
+.sonuc .sehir {
+    color: black;
+    font-weight: bolder;
+    font-size: var(--sehir-yazi-boyut);
+    font-family: 'Henny Penny';
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.sonuc .detay {
+   
+    margin: 0 auto;
+    width: 700px;
+    height: 150px;
+    background-color: var(--renk-sonuc-arka);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Henny Penny';
+}
+
+.sonuc .detay .derece{
+    color: black;
+    font-size: var(--derece-yazi-boyut);
+    font-weight: bold;
+}
+
+.sonuc .detay .statu{
+    color: black;
+    font-size: var(--statu-yazi-boyut);
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 950px) {
+    .uygulama {
+        width: 60%;
+        height: 100vh;
+        margin: 0 auto;
+        background-color: rgba(3, 3, 3, 0.67);
+    }
+}
+
